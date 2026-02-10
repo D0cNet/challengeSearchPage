@@ -16,7 +16,9 @@ E.g., if you have @coveo/atomic@2.0.0 installed, use the following CDN link at p
 ## Available Scripts
 
 In the project directory, you can run:
+### `npm i`
 
+To start page 
 ### `npm start`
 
 Runs the app in the development mode.
