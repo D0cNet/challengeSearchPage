@@ -1,0 +1,49 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring
+files. # dependencies node_modules # misc .DS_Store npm-debug.log* # Sensitive
+.env # Build dist www
+.stencil
+# Dependencies
+/node_modules
+
+# Production build artifacts
+/build
+/dist
+/out
+
+
+# TypeScript cache file
+.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS and IDE files
+.DS_Store # macOS
+.idea/    # JetBrains IDEs
+.vscode/  # VS Code (optional, can be useful to share some config)
+*.iml     # JetBrains IDEs
+
+# Environment variables
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Testing and coverage
+/coverage
+
+# Optional: Compiled JavaScript files if you source control the TypeScript files
+# This is generally recommended in a typical setup where the build step runs separately.
+# If you commit compiled JS, you should ignore these lines.
+*.js
+*.jsx
+*.d.ts
