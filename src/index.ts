@@ -6,22 +6,13 @@ async function main() {
     document.querySelector("atomic-search-interface")!;
 
   const organizationId = process.env.ORGANIZATION_ID!;
-  const platformEnvironment = process.env.PLATFORM_ENVIRONMENT!;
   const accessToken = process.env.API_KEY!;
+  const platformUrl = process.env.PLATFORM_URL!;
 
-
-  const platformUrlMap: Record<string, string> = {
-    dev: "https://dev-platform.cloud.coveo.com",
-    stg: "https://staging-platform.cloud.coveo.com",
-    prod: "https://platform.cloud.coveo.com",
-    hipaa: "https://hipaa-platform.cloud.coveo.com",
-  };
-
-  
   await searchInterface.initialize({
     accessToken,
     organizationId,
-    platformUrl: platformUrlMap[platformEnvironment] || platformUrlMap["prod"],
+    platformUrl,
     analytics: {
       analyticsMode: "legacy",
     },
