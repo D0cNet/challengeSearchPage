@@ -6,7 +6,7 @@ async function main() {
     document.querySelector("atomic-search-interface")!;
 
   const organizationId = process.env.ORGANIZATION_ID!;
-  const platformEnvironment = process.env.PLATFORM_ENVIRONMENT || "prod";
+  const platformEnvironment = process.env.PLATFORM_ENVIRONMENT!;
   const accessToken = process.env.API_KEY!;
 
 
